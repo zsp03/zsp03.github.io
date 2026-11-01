@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zulfiqry Saadputra — Portofolio</title>
+  <meta name="description" content="Portofolio Zulfiqry Saadputra, S.T. — backend developer dan system architect. Proyek web, database, deployment, dan IoT.">
+  <meta name="author" content="Zulfiqry Saadputra">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Zulfiqry Saadputra — Portofolio">
+  <meta property="og:description" content="Backend developer dan system architect. Proyek web, database, deployment, dan IoT.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <noscript>
+    <style>
+      @media (max-width: 767px) {
+        .nav-links { display: flex; gap: 16px; }
+        .nav-actions { display: none; }
+      }
+    </style>
+  </noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Zulfiqry Saadputra — kembali ke atas">
+        <span class="brand-mark" aria-hidden="true">ZS</span>
+        <span class="brand-name">Zulfiqry Saadputra</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigasi utama">
+        <a class="nav-link" href="#projects" data-nav-link>Proyek</a>
+        <a class="nav-link" href="#about" data-nav-link>Tentang</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-secondary nav-cta" href="#contact" data-nav-link>Kontak</a>
+        <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" inert>
+      <nav class="container mobile-menu-inner" aria-label="Navigasi seluler">
+        <a href="#projects" data-nav-link>Proyek</a>
+        <a href="#about" data-nav-link>Tentang</a>
+        <a class="btn btn-primary" href="#contact">Hubungi saya</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="eyebrow">Zulfiqry Saadputra, S.T. <span aria-hidden="true">·</span> Portofolio</p>
+        <h1 id="hero-title">Membangun sistem yang rapi, aman, dan mudah dipakai.</h1>
+        <p class="hero-lede">
+          Backend developer &amp; system architect dengan pengalaman membangun aplikasi web,
+          mengelola database, dan merilis lewat pipeline CI/CD — dari portal alumni hingga
+          verifikasi tiket berbasis IoT.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Lihat proyek</a>
+          <a class="btn btn-secondary" href="#about">Tentang saya</a>
+        </div>
+
+        <p class="command-pill" role="note">
+          <span class="prompt" aria-hidden="true">$</span>
+          <span>backend · laravel · mysql · iot</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="kicker">01 — Proyek</p>
+          <h2 id="projects-title">Proyek pilihan</h2>
+          <p class="section-lede">
+            Empat proyek yang mewakili cara saya merancang, membangun, dan merilis sistem —
+            dari portal informasi hingga perangkat IoT.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          <article class="project" data-reveal>
+            <figure class="project-media">
+              <img src="assets/portal-alumni.svg" alt="Ilustrasi antarmuka Portal Alumni: beranda dengan berita utama, distribusi lowongan, dan database alumni." width="800" height="420" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Internship</span>
+                <span>Apr — Jun 2023</span>
+              </div>
+              <h3>Portal Alumni</h3>
+              <p class="project-role">Backend Developer &amp; System Architect <span>— Direktorat Hubungan Alumni, Universitas Hasanuddin</span></p>
+              <p class="project-desc">
+                Portal informasi terpusat untuk alumni, dilengkapi CMS kustom untuk publikasi berita
+                di halaman utama dan distribusi lowongan. Database alumni dapat diakses oleh seluruh alumni.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>Drive API</li>
+                <li>Mailing</li>
+              </ul>
+              <details class="project-details">
+                <summary>Peran &amp; tanggung jawab</summary>
+                <div class="details-body">
+                  <p>
+                    Bertanggung jawab penuh atas pemrograman inti dan perancangan arsitektur sistem web —
+                    termasuk backend database alumni, CMS berita dan lowongan, serta memastikan alur kerja
+                    admin tetap sederhana dan lancar.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <figure class="project-media">
+              <img src="assets/monitoring-publikasi.svg" alt="Ilustrasi dashboard Sistem Monitoring Publikasi: kartu statistik, grafik publikasi per tahun, tabel data terbaru, dan tombol import Excel." width="800" height="420" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Internship</span>
+                <span>Agu — Des 2023</span>
+              </div>
+              <h3>Sistem Monitoring Publikasi</h3>
+              <p class="project-role">Backend Developer &amp; Deployment Manager <span>— Departemen Teknik Informatika, Universitas Hasanuddin</span></p>
+              <p class="project-desc">
+                Aplikasi web untuk menyimpan publikasi dosen beserta mahasiswa yang terlibat.
+                Data dosen dapat diimpor otomatis dari file Excel, dengan pencarian yang komprehensif.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Filament</li>
+                <li>MySQL</li>
+                <li>Excel</li>
+                <li>Linux</li>
+                <li>CI/CD</li>
+              </ul>
+              <details class="project-details">
+                <summary>Peran &amp; alur kerja</summary>
+                <div class="details-body">
+                  <p>
+                    Berkolaborasi dengan tim untuk merancang logika database dan membangun fitur.
+                    Selain pengembangan, saya memegang tanggung jawab penuh pada manajemen deployment
+                    serta konfigurasi dan implementasi pipeline CI/CD.
+                  </p>
+                  <h4>Alur pengembangan</h4>
+                  <ol>
+                    <li>Analisis format file</li>
+                    <li>Pembersihan data publikasi</li>
+                    <li>Penampilan data publikasi</li>
+                    <li>Pengkodean proses import</li>
+                    <li>Penyambungan database aplikasi</li>
+                  </ol>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <figure class="project-media">
+              <img src="assets/posyandu.svg" alt="Ilustrasi dashboard Posyandu: data balita, grafik pertumbuhan Tinggi Badan terhadap Umur dengan standar WHO, dan tabel pengukuran terbaru." width="800" height="420" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Research Project</span>
+              </div>
+              <h3>Sistem Informasi Kader Posyandu</h3>
+              <p class="project-role">Developer <span>— Coding, testing, dan deployment</span></p>
+              <p class="project-desc">
+                Digitalisasi Buku SIP (Sistem Informasi Posyandu) yang sebelumnya dicatat manual.
+                Data gizi balita dikelola terpusat dan divisualisasikan dalam grafik sesuai standar WHO —
+                termasuk perbandingan Tinggi Badan terhadap Umur (TB/U) untuk deteksi dini stunting.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Linux</li>
+                <li>CI/CD</li>
+              </ul>
+              <details class="project-details">
+                <summary>Peran &amp; tanggung jawab</summary>
+                <div class="details-body">
+                  <p>
+                    Menulis kode sistem, lalu bertanggung jawab penuh pada tahap testing hingga
+                    deployment aplikasi.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <figure class="project-media">
+              <img src="assets/qr-ticket.svg" alt="Ilustrasi sistem tiket QR: pemindaian QR Code, papan ESP32-CAM, dan dasbor admin yang menerima status validasi secara real-time." width="800" height="420" loading="lazy">
+            </figure>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Personal Project</span>
+              </div>
+              <h3>Autentikasi Tiket Berbasis QR Code</h3>
+              <p class="project-role">Fullstack IoT &amp; Web Developer <span>— ESP32-CAM + Laravel</span></p>
+              <p class="project-desc">
+                Sistem verifikasi tiket real-time berbasis IoT untuk mencegah pemalsuan tiket acara.
+                Memadukan pemindai mandiri dengan dasbor pemantauan web yang responsif.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>ESP32</li>
+                <li>C++</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Livewire</li>
+                <li>Laravel Echo</li>
+                <li>WebSockets</li>
+              </ul>
+              <details class="project-details">
+                <summary>Arsitektur &amp; cara kerja</summary>
+                <div class="details-body">
+                  <p>
+                    Pemrosesan dan decoding QR Code dilakukan lokal di mikrokontroler menggunakan
+                    library Quirc C++. ESP32-CAM memanggil API server; server memvalidasi tiket dan
+                    mengirim status secara real-time ke dasbor admin lewat WebSocket — tanpa perlu
+                    memuat ulang halaman.
+                  </p>
+                  <h4>Indikator hardware</h4>
+                  <ul>
+                    <li><strong>Tiket valid (200):</strong> LED menyala &amp; buzzer berbunyi 2×.</li>
+                    <li><strong>Tiket ditolak (404):</strong> buzzer berbunyi 1×.</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="kicker">02 — Tentang</p>
+          <h2 id="about-title">Dari skema database sampai pipeline deploy.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <p>
+              Backend developer dan system architect dengan pengalaman membangun aplikasi web
+              berbasis Laravel. Saya menikmati bagian yang tidak selalu terlihat: model data yang
+              masuk akal, backend yang aman dirawat, dan deployment yang tidak mengejutkan siapa pun.
+            </p>
+            <p>
+              Selain pengembangan fitur, saya terbiasa mengelola server Linux dan menyiapkan CI/CD.
+              Di proyek personal, saya juga mengeksplorasi integrasi perangkat keras dan web real-time
+              lewat ESP32 dan WebSocket.
+            </p>
+            <p class="skills-label">Keahlian</p>
+            <ul class="tags" aria-label="Keahlian">
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>Filament</li>
+              <li>Linux</li>
+              <li>CI/CD</li>
+              <li>WebSockets</li>
+              <li>ESP32</li>
+              <li>C++</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+
+          <div class="terminal" role="group" data-reveal aria-label="Ringkasan profil dalam format terminal">
+            <div class="terminal-bar" aria-hidden="true">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="terminal-title">zulfiqry@porto: ~/about</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+              <div class="terminal-line out">Zulfiqry Saadputra</div>
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat fokus.txt</span></div>
+              <div class="terminal-line out">backend architecture</div>
+              <div class="terminal-line out">deployment &amp; ci/cd</div>
+              <div class="terminal-line out">iot integration</div>
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cursor" aria-hidden="true"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps" data-reveal>
+          <div class="step">
+            <p class="step-num">01</p>
+            <h3>Rancang</h3>
+            <p>Memetakan kebutuhan, alur data, dan skema database sebelum menulis kode.</p>
+          </div>
+          <div class="step">
+            <p class="step-num">02</p>
+            <h3>Bangun</h3>
+            <p>Membangun backend yang terstruktur, aman, dan mudah dirawat.</p>
+          </div>
+          <div class="step">
+            <p class="step-num">03</p>
+            <h3>Rilis</h3>
+            <p>Menguji, menyiapkan deployment, dan merapikan pipeline CI/CD.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <p class="kicker">03 — Kontak</p>
+          <h2 id="contact-title">Punya proyek yang perlu dibangun?</h2>
+          <p>
+            Terbuka untuk peluang backend, fullstack, dan integrasi IoT. Ceritakan kebutuhan Anda —
+            saya akan membantu memetakan solusi yang tepat.
+          </p>
+          <!-- Placeholder fallback. Ganti email dan tautan utama di script.js. -->
+          <div class="contact-actions">
+            <a class="btn btn-on-dark" href="mailto:hello@example.com" data-contact="email">Email saya</a>
+            <div class="contact-links">
+              <a class="contact-link" href="https://github.com/username" data-contact="github">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="contact-link" href="https://linkedin.com/in/username" data-contact="linkedin">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Zulfiqry Saadputra. Dibangun dengan HTML, CSS, dan JavaScript.</p>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="#projects">Proyek</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+        <a href="#home">Kembali ke atas <span aria-hidden="true">↑</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
