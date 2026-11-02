@@ -6,9 +6,8 @@
    ========================================================= */
 
 const contact = {
-  email: "hello@example.com",
-  github: "https://github.com/username",
-  linkedin: "https://linkedin.com/in/username",
+  email: "zsp301@gmail.com",
+  github: "https://github.com/zsp03",
 };
 
 /* ---------------------------------------------------------
