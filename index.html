@@ -6,8 +6,8 @@
   <title>Zulfiqry Saadputra — Portofolio</title>
   <meta name="description" content="Portofolio Zulfiqry Saadputra, S.T. — backend developer dan system architect. Proyek web, database, deployment, dan IoT.">
   <meta name="author" content="Zulfiqry Saadputra">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0a">
   <meta property="og:title" content="Zulfiqry Saadputra — Portofolio">
   <meta property="og:description" content="Backend developer dan system architect. Proyek web, database, deployment, dan IoT.">
   <meta property="og:type" content="website">
@@ -16,75 +16,93 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <noscript>
-    <style>
-      @media (max-width: 767px) {
-        .nav-links { display: flex; gap: 16px; }
-        .nav-actions { display: none; }
-      }
-    </style>
-  </noscript>
 </head>
 <body>
   <a class="skip-link" href="#main">Lewati ke konten</a>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="Zulfiqry Saadputra — kembali ke atas">
-        <span class="brand-mark" aria-hidden="true">ZS</span>
-        <span class="brand-name">Zulfiqry Saadputra</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Navigasi utama">
-        <a class="nav-link" href="#projects" data-nav-link>Proyek</a>
-        <a class="nav-link" href="#about" data-nav-link>Tentang</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a class="btn btn-secondary nav-cta" href="#contact" data-nav-link>Kontak</a>
-        <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-
-    <div class="mobile-menu" id="mobile-menu" inert>
-      <nav class="container mobile-menu-inner" aria-label="Navigasi seluler">
-        <a href="#projects" data-nav-link>Proyek</a>
-        <a href="#about" data-nav-link>Tentang</a>
-        <a class="btn btn-primary" href="#contact">Hubungi saya</a>
-      </nav>
-    </div>
-  </header>
-
   <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <p class="eyebrow">Zulfiqry Saadputra, S.T. <span aria-hidden="true">·</span> Portofolio</p>
-        <h1 id="hero-title">Membangun sistem yang rapi, aman, dan mudah dipakai.</h1>
-        <p class="hero-lede">
-          Backend developer &amp; system architect dengan pengalaman membangun aplikasi web,
-          mengelola database, dan merilis lewat pipeline CI/CD — dari portal alumni hingga
-          verifikasi tiket berbasis IoT.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Lihat proyek</a>
-          <a class="btn btn-secondary" href="#about">Tentang saya</a>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-head" data-reveal>
+          <p class="kicker">01 — Tentang</p>
+          <p class="eyebrow">Zulfiqry Saadputra, S.T. <span aria-hidden="true">·</span> Portofolio</p>
+          <h1 id="about-title">Dari skema database sampai pipeline deploy.</h1>
+          <p class="about-role">Backend developer &amp; system architect</p>
         </div>
 
-        <p class="command-pill" role="note">
-          <span class="prompt" aria-hidden="true">$</span>
-          <span>backend · laravel · mysql · iot</span>
-        </p>
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <p class="about-lede">
+              Saya membangun aplikasi web dengan fokus pada arsitektur backend, keamanan data,
+              dan proses rilis yang bisa diandalkan. Saya menikmati bagian yang tidak selalu
+              terlihat: model data yang masuk akal, backend yang aman dirawat, dan deployment
+              yang tidak mengejutkan siapa pun.
+            </p>
+            <p>
+              Selain pengembangan fitur, saya terbiasa mengelola server Linux dan menyiapkan CI/CD.
+              Di proyek personal, saya juga mengeksplorasi integrasi perangkat keras dan web real-time
+              lewat ESP32 dan WebSocket.
+            </p>
+
+            <p class="skills-label">Keahlian</p>
+            <ul class="tags" aria-label="Keahlian">
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>Filament</li>
+              <li>Linux</li>
+              <li>CI/CD</li>
+              <li>WebSockets</li>
+              <li>ESP32</li>
+              <li>C++</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+
+          <div class="terminal" role="group" data-reveal aria-label="Ringkasan profil dalam format terminal">
+            <div class="terminal-bar" aria-hidden="true">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="terminal-title">zulfiqry@porto: ~/about</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+              <div class="terminal-line out">Zulfiqry Saadputra</div>
+              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat fokus.txt</span></div>
+              <div class="terminal-line out">backend architecture</div>
+              <div class="terminal-line out">deployment &amp; ci/cd</div>
+              <div class="terminal-line out">iot integration</div>
+              <div class="terminal-line"><span class="prompt">$</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-contact" data-reveal>
+          <div class="contact-copy">
+            <h2 class="contact-title">Terbuka untuk peluang backend, fullstack, dan integrasi IoT.</h2>
+            <p>Ceritakan kebutuhan Anda — saya akan membantu memetakan solusi yang tepat.</p>
+          </div>
+
+          <!-- Placeholder fallback. Ganti email dan tautan utama di script.js. -->
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@example.com" data-contact="email">Email saya</a>
+            <div class="contact-links">
+              <a class="contact-link" href="https://github.com/username" data-contact="github">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="contact-link" href="https://linkedin.com/in/username" data-contact="linkedin">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+
+        <a class="jump-link" href="#projects" data-reveal>Recent Projects <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="container">
         <div class="section-head" data-reveal>
-          <p class="kicker">01 — Proyek</p>
-          <h2 id="projects-title">Proyek pilihan</h2>
+          <p class="kicker">02 — Projects</p>
+          <h2 id="projects-title">Recent Projects</h2>
           <p class="section-lede">
             Empat proyek yang mewakili cara saya merancang, membangun, dan merilis sistem —
             dari portal informasi hingga perangkat IoT.
@@ -249,111 +267,12 @@
         </div>
       </div>
     </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <p class="kicker">02 — Tentang</p>
-          <h2 id="about-title">Dari skema database sampai pipeline deploy.</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-copy" data-reveal>
-            <p>
-              Backend developer dan system architect dengan pengalaman membangun aplikasi web
-              berbasis Laravel. Saya menikmati bagian yang tidak selalu terlihat: model data yang
-              masuk akal, backend yang aman dirawat, dan deployment yang tidak mengejutkan siapa pun.
-            </p>
-            <p>
-              Selain pengembangan fitur, saya terbiasa mengelola server Linux dan menyiapkan CI/CD.
-              Di proyek personal, saya juga mengeksplorasi integrasi perangkat keras dan web real-time
-              lewat ESP32 dan WebSocket.
-            </p>
-            <p class="skills-label">Keahlian</p>
-            <ul class="tags" aria-label="Keahlian">
-              <li>PHP</li>
-              <li>Laravel</li>
-              <li>MySQL</li>
-              <li>Filament</li>
-              <li>Linux</li>
-              <li>CI/CD</li>
-              <li>WebSockets</li>
-              <li>ESP32</li>
-              <li>C++</li>
-              <li>REST API</li>
-            </ul>
-          </div>
-
-          <div class="terminal" role="group" data-reveal aria-label="Ringkasan profil dalam format terminal">
-            <div class="terminal-bar" aria-hidden="true">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-              <span class="terminal-title">zulfiqry@porto: ~/about</span>
-            </div>
-            <div class="terminal-body">
-              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">whoami</span></div>
-              <div class="terminal-line out">Zulfiqry Saadputra</div>
-              <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat fokus.txt</span></div>
-              <div class="terminal-line out">backend architecture</div>
-              <div class="terminal-line out">deployment &amp; ci/cd</div>
-              <div class="terminal-line out">iot integration</div>
-              <div class="terminal-line"><span class="prompt">$</span> <span class="cursor" aria-hidden="true"></span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="steps" data-reveal>
-          <div class="step">
-            <p class="step-num">01</p>
-            <h3>Rancang</h3>
-            <p>Memetakan kebutuhan, alur data, dan skema database sebelum menulis kode.</p>
-          </div>
-          <div class="step">
-            <p class="step-num">02</p>
-            <h3>Bangun</h3>
-            <p>Membangun backend yang terstruktur, aman, dan mudah dirawat.</p>
-          </div>
-          <div class="step">
-            <p class="step-num">03</p>
-            <h3>Rilis</h3>
-            <p>Menguji, menyiapkan deployment, dan merapikan pipeline CI/CD.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="contact-card" data-reveal>
-          <p class="kicker">03 — Kontak</p>
-          <h2 id="contact-title">Punya proyek yang perlu dibangun?</h2>
-          <p>
-            Terbuka untuk peluang backend, fullstack, dan integrasi IoT. Ceritakan kebutuhan Anda —
-            saya akan membantu memetakan solusi yang tepat.
-          </p>
-          <!-- Placeholder fallback. Ganti email dan tautan utama di script.js. -->
-          <div class="contact-actions">
-            <a class="btn btn-on-dark" href="mailto:hello@example.com" data-contact="email">Email saya</a>
-            <div class="contact-links">
-              <a class="contact-link" href="https://github.com/username" data-contact="github">GitHub <span aria-hidden="true">↗</span></a>
-              <a class="contact-link" href="https://linkedin.com/in/username" data-contact="linkedin">LinkedIn <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Zulfiqry Saadputra. Dibangun dengan HTML, CSS, dan JavaScript.</p>
-      <nav class="footer-links" aria-label="Navigasi footer">
-        <a href="#projects">Proyek</a>
-        <a href="#about">Tentang</a>
-        <a href="#contact">Kontak</a>
-        <a href="#home">Kembali ke atas <span aria-hidden="true">↑</span></a>
-      </nav>
+      <p>© 2026 Zulfiqry Saadputra.</p>
+      <a href="#about">Kembali ke atas <span aria-hidden="true">↑</span></a>
     </div>
   </footer>
 
