@@ -1,0 +1,16 @@
+title: Zulfiqry Saadputra
+description: Portofolio Zulfiqry Saadputra, S.T., backend developer dan system architect.
+exclude:
+  - README.md
+  - PRODUCT.md
+  - DESIGN.md
+  - portfolio_content.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - scripts
+  - node_modules
+  - vendor
+  - .impeccable
+  - .opencode

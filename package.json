@@ -1,0 +1,12 @@
+{
+  "name": "portoio-preview",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "node scripts/preview.mjs"
+  },
+  "devDependencies": {
+    "js-yaml": "^5.5.0",
+    "liquidjs": "^10.30.1"
+  }
+}

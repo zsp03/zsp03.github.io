@@ -1,3 +1,11 @@
 README.md
+PRODUCT.md
 DESIGN.md
 portfolio_content.md
+
+.impeccable/
+.opencode/
+node_modules/
+_site/
+.jekyll-cache/
+.sass-cache/

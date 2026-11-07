@@ -1,0 +1,199 @@
+# Project data for the portfolio.
+# Add a new project by appending one entry here and adding its screenshots to assets/.
+# The opening list and the project sections are both generated from this file.
+
+- id: portal-alumni
+  title: Portal Alumni
+  index_title: Portal Alumni
+  index_meta: "2023 · Magang"
+  kind: Magang
+  lede: >-
+    Portal informasi terpusat untuk alumni, dengan CMS kustom untuk publikasi berita
+    dan distribusi lowongan. Database alumni terbuka untuk seluruh alumni.
+  specs:
+    - key: Peran
+      value: Backend Developer &amp; System Architect
+    - key: Klien
+      value: Direktorat Hubungan Alumni, Universitas&nbsp;Hasanuddin
+    - key: Waktu
+      value: April hingga Juni 2023
+    - key: Stack
+      value: PHP, Laravel, MySQL, Drive API, Mailing
+  link:
+    label: alumni.unhas.ac.id
+    url: https://alumni.unhas.ac.id
+  media:
+    - src: assets/0.png
+      alt: Beranda Portal Alumni dengan berita utama dan navigasi
+      width: 1245
+      height: 717
+      number: "1.1"
+      caption: Beranda dan berita utama
+      span: shot--6
+    - src: assets/1.png
+      alt: Halaman profil alumni pada Portal Alumni
+      width: 794
+      height: 391
+      number: "1.2"
+      caption: Profil alumni
+      span: shot--6
+    - src: assets/2.png
+      alt: Halaman berita dan kegiatan pada Portal Alumni
+      width: 1083
+      height: 642
+      number: "1.3"
+      caption: Berita dan kegiatan
+      span: shot--6
+    - src: assets/4.png
+      alt: Halaman lowongan kerja pada Portal Alumni
+      width: 1119
+      height: 609
+      number: "1.4"
+      caption: Lowongan kerja
+      span: shot--6
+  notes:
+    title: Peran dan tanggung jawab
+    body: >-
+      Bertanggung jawab penuh atas pemrograman inti dan perancangan arsitektur sistem web,
+      termasuk backend database alumni, CMS berita dan lowongan, serta memastikan alur kerja
+      admin tetap sederhana dan lancar.
+
+- id: monitoring-publikasi
+  title: Sistem Monitoring Publikasi
+  index_title: Monitoring Publikasi
+  index_meta: "2023 · Magang"
+  kind: Magang
+  lede: >-
+    Aplikasi web untuk menyimpan publikasi dosen beserta mahasiswa yang terlibat.
+    Data dosen diimpor otomatis dari file Excel dan dapat dicari secara menyeluruh.
+  specs:
+    - key: Peran
+      value: Backend Developer &amp; Deployment Manager
+    - key: Klien
+      value: Departemen Teknik Informatika, Universitas&nbsp;Hasanuddin
+    - key: Waktu
+      value: Agustus hingga Desember 2023
+    - key: Stack
+      value: PHP, Laravel, Filament, MySQL, Excel, Linux, CI/CD
+  media:
+    - src: assets/7.png
+      alt: Daftar publikasi dosen pada Sistem Monitoring Publikasi
+      width: 1727
+      height: 783
+      number: "2.1"
+      caption: Daftar publikasi dosen
+      span: shot--12
+    - src: assets/8.png
+      alt: Analisis format file dan pembersihan data publikasi
+      width: 1064
+      height: 489
+      number: "2.2"
+      caption: Pembersihan data
+      span: shot--6
+    - src: assets/9.png
+      alt: Alur pengembangan dan implementasi Sistem Monitoring Publikasi
+      width: 861
+      height: 383
+      number: "2.3"
+      caption: Alur pengembangan
+      span: shot--6
+  notes:
+    title: Peran dan alur kerja
+    body: >-
+      Berkolaborasi dengan tim untuk merancang logika database dan membangun fitur.
+      Saya juga memegang tanggung jawab penuh pada manajemen deployment serta konfigurasi
+      dan implementasi pipeline CI/CD.
+    workflow:
+      - Analisis format file
+      - Pembersihan data publikasi
+      - Penampilan data publikasi
+      - Pengkodean proses impor
+      - Penyambungan database aplikasi
+
+- id: posyandu
+  title: Sistem Informasi Kader Posyandu
+  index_title: Kader Posyandu
+  index_meta: Riset
+  kind: Proyek riset
+  lede: >-
+    Digitalisasi Buku SIP yang sebelumnya dicatat manual. Data gizi balita dikelola
+    terpusat dan divisualisasikan sesuai standar WHO, termasuk perbandingan Tinggi
+    Badan terhadap Umur untuk deteksi dini stunting.
+  specs:
+    - key: Peran
+      value: Developer
+    - key: Konteks
+      value: Penulisan kode, testing, dan deployment
+    - key: Stack
+      value: PHP, Laravel, Linux, CI/CD
+  media:
+    - src: assets/10.png
+      alt: Dasbor data balita pada Sistem Informasi Kader Posyandu
+      width: 551
+      height: 338
+      number: "3.1"
+      caption: Dasbor data balita
+      span: shot--6
+    - src: assets/11.png
+      alt: Grafik tinggi badan terhadap umur sesuai standar WHO
+      width: 437
+      height: 275
+      number: "3.2"
+      caption: Grafik TB/U
+      span: shot--6
+  notes:
+    title: Peran dan tanggung jawab
+    body: >-
+      Menulis kode sistem, lalu bertanggung jawab penuh pada tahap testing hingga
+      deployment aplikasi.
+
+- id: qr-ticket
+  title: Autentikasi Tiket Berbasis QR Code
+  index_title: Tiket QR Code
+  index_meta: Personal
+  kind: Proyek personal
+  lede: >-
+    Sistem verifikasi tiket real-time berbasis IoT untuk mencegah pemalsuan tiket acara.
+    Pemindai mandiri dipadukan dengan dasbor pemantauan web yang responsif.
+  specs:
+    - key: Peran
+      value: Fullstack IoT &amp; Web Developer
+    - key: Konteks
+      value: ESP32-CAM dengan server Laravel
+    - key: Stack
+      value: ESP32, C++, PHP, Laravel, Livewire, Laravel Echo, WebSockets
+  media:
+    - src: assets/12.png
+      alt: Pemindaian QR Code tiket menggunakan ponsel
+      width: 750
+      height: 422
+      number: "4.1"
+      caption: Pemindaian tiket
+      span: shot--8
+    - src: assets/13.png
+      alt: Diagram arsitektur sistem tiket QR Code
+      width: 741
+      height: 749
+      number: "4.2"
+      caption: Arsitektur sistem
+      span: shot--4 shot--tall
+    - src: assets/14.png
+      alt: Rangkaian hardware ESP32-CAM dengan LED dan buzzer
+      width: 892
+      height: 540
+      number: "4.3"
+      caption: Rangkaian hardware
+      span: shot--12
+  notes:
+    title: Arsitektur dan cara kerja
+    body: >-
+      Pemrosesan dan decoding QR Code dilakukan lokal di mikrokontroler menggunakan
+      library Quirc C++. ESP32-CAM memanggil API server, server memvalidasi tiket, lalu
+      mengirim status ke dasbor admin lewat WebSocket tanpa memuat ulang halaman.
+    signals:
+      - code: "200"
+        label: Tiket valid
+        text: LED menyala dan buzzer berbunyi dua kali.
+      - code: "404"
+        label: Tiket ditolak
+        text: buzzer berbunyi satu kali.
