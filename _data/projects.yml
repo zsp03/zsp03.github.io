@@ -126,6 +126,9 @@
       value: Penulisan kode, testing, dan deployment
     - key: Stack
       value: PHP, Laravel, Linux, CI/CD
+  link:
+    label: doi.org/10.33084/pengabdianmu.v9i2.5860
+    url: https://doi.org/10.33084/pengabdianmu.v9i2.5860
   media:
     - src: assets/10.png
       alt: Dasbor data balita pada Sistem Informasi Kader Posyandu
